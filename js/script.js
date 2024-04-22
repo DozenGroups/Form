@@ -1,6 +1,6 @@
 jQuery(document).ready(function () {
      
-     $(".phone").mask("+7 (999) 999 99 99"); 
+     $(".phone").mask("+7 (999) 999 9999"); 
     
    
     jQuery('.send-form').click( function() {
@@ -16,7 +16,7 @@ jQuery(document).ready(function () {
     			dataType: 'html',
     			data: form.serialize(),
     			success: function(data) {
-    				form.html(data);
+    				// form.html(data);
     				form.css('opacity','1');
                     //form.find('.status').html('форма отправлена успешно');
                     //$('#myModal').modal('show') // для бутстрапа
